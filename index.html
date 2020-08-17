@@ -31,7 +31,7 @@
                 <p class="banner-text-2">Место, откуда не хочется улетать</p>
             </div>
             <div class="button">
-                <button>Забронировать</button>
+                <button><a href="#form">Забронировать</a></button>
             </div>
         </div>
         <section class="section-1" id="preimushchestva">
@@ -63,8 +63,37 @@
                 <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
                 <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
             </div>
-            
         </section>
+        <form id="form">
+            <h2>Оставьте заявку сегодня!</h2>
+            <fieldset>
+                <legend>Параметры квартиры</legend>
+                <div class="field">
+                    <label>Количество комнат:</label>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Отделка:</label>
+                    <select>
+                        <option>Вариант 1</option>
+                        <option>Вариант 2</option>
+                        <option>Вариант 3</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <div class="field-contacts">Имя:<input type="text"></div>
+                <div class="field-contacts">Телефон:<input type="text"></div>
+                <div class="field-contacts">E-mail:<input type="text"></div> 
+            </fieldset>
+
+            <input type="submit" value="Отправить">
+        </form>
     </main>
     <footer>
         <p>footer</p>        

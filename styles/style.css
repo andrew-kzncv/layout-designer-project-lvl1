@@ -73,10 +73,13 @@ button {
     border: 1px solid #ffffff;
     border-radius: 8px;
     background-color: unset;
-    color: white;
     font-size: 16px;
     font-weight: bold;
     padding: 10px 20px;
+}
+button a {
+    text-decoration: none;
+    color: white;
 }
 .section-1 {
     display: flex;
@@ -126,5 +129,73 @@ h2 {
 }
 .section-3 img {
     margin-left: 80px;
+}
+form {
+    background-color: #f7f7f7;
+    width: 1000px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+form h2 {
+    text-align: center;
+}
+fieldset {
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid #00ab83;
+    padding: 20px;
+    padding-top: 10px;
+}
+form > input {
+    margin-left: 280px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-color: #00d9a6;
+    background-color: transparent;
+    padding: 10px 25px;
+    border-width: 1px;
+    color: #00d9a6;
+    font-weight: bold;
+    border-style: solid;
+}
+.field-contacts {
+    margin-top: 15px;
 
+}
+select {
+    width: 120px;
+    margin-right: 60px;
+    border-radius: 8px;
+    border-color: LightGray;
+    background-color: white;
+    padding: 5px;
+}
+fieldset input {
+    width: 170px;
+    float: right;
+    border-radius: 8px;
+    border-color: LightGray;
+    border-width: 1px;
+    border-style: solid;
+    height: 20px;
+
+}
+.field {
+    clear: both;
+    text-align: right;
+    margin-top: 15px;
+    line-height: 23px;
+}
+label {
+    float: left;
+}
+legend, label, option, fieldset > div {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+legend {
+    color: #00d9a6;
 }
