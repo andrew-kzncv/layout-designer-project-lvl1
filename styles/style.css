@@ -33,7 +33,9 @@ body {
     margin-left: 20px;
     display: flex;
     align-items: center;
-    
+}
+.logo img {
+    height: 30px;
 }
 .site-name {
     padding: 20px;
@@ -55,6 +57,9 @@ body {
     text-align: center;
     height: 390px;
 }
+div > img {
+    height: 140px;
+}
 .banner-text-1 {
     font-family: sans-serif;
     color: white;
@@ -69,17 +74,14 @@ body {
     font-weight: bold;
     margin-top: -40px;
 }
-button {
+.form-button {
     border: 1px solid #ffffff;
     border-radius: 8px;
     background-color: unset;
     font-size: 16px;
     font-weight: bold;
     padding: 10px 20px;
-}
-button a {
-    text-decoration: none;
-    color: white;
+    color: white;  
 }
 .section-1 {
     display: flex;
@@ -114,6 +116,7 @@ h2 {
 }
 .section-2 img {
     margin: 50px 105px 50px 50px;
+    height: 180px;
 }
 .section-3 {
     display: flex;
@@ -129,15 +132,16 @@ h2 {
 }
 .section-3 img {
     margin-left: 80px;
+    height: 180px;
 }
-form {
+.form-zayavka {
     background-color: #f7f7f7;
     width: 1000px;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-form h2 {
+.form-zayavka h2 {
     text-align: center;
 }
 fieldset {
@@ -148,7 +152,7 @@ fieldset {
     padding: 20px;
     padding-top: 10px;
 }
-form > input {
+.form-zayavka > input {
     margin-left: 280px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -218,13 +222,16 @@ footer {
 .logo-footer {
     line-height: 40px;
 }
-ol > span {
+li > span {
     font-size: 18px;
     font-weight: bold;
     padding-left: 20px;
 }
-.logo-footer > ul > ol {
+.logo-footer > ul > li {
     display: flex;
+}
+.logo-footer img {
+    width: 30px;
 }
 li a {
     text-decoration: none;
