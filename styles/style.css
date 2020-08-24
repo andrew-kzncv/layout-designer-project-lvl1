@@ -81,20 +81,20 @@ div > img {
     font-size: 16px;
     font-weight: bold;
     padding: 10px 20px;
-    color: white;  
+    color: white; 
+}
+.cursor-pointer {
+    cursor: pointer;
 }
 .section-1 {
     display: flex;
-    flex-direction: row;
     width: 1000px;
     margin: auto;
-    justify-content: center;
-    padding: 50px 0 50px 0;
+    justify-content: space-between;
+    padding: 50px 0;
 }
 .section-1 article {
-    width: 330px;
-    text-align: left;
-    padding: 20px;
+    width: 300px;
     line-height: 24px;
 }
 h2 {
@@ -102,60 +102,57 @@ h2 {
     font-size: 28px;
 }
 .section-2 {
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    margin: auto;
-    justify-content: center;
     background-color: #f7f7f7;
-    padding: 30px 0 30px 0;
+    padding: 50px 0;
 }
-.section-2 div {
-    margin: 24px 0 20px 80px;
+.section-2 > div {
+    width: 1000px;
+    display: flex;
+    margin: auto;
+}
+.section-2 > div > div{
+    margin: 0px 80px 0 0;
     line-height: 24px;
+    padding-left: 50px;
 }
-.section-2 img {
-    margin: 50px 105px 50px 50px;
-    height: 180px;
+.section-2 div img {
+    margin: 25px 0 0 50px;
+    height: 210px;
+    padding-right: 50px;
 }
 .section-3 {
     display: flex;
-    flex-direction: row;
     width: 1000px;
     margin: auto;
-    justify-content: center;
-    padding: 70px 0 30px 0;
+    padding: 50px 0;
 }
 .section-3 div {
-    margin: -25px 105px 0 80px;
+    margin: -25px 45px 0 125px;
     line-height: 24px;
+    text-align: justify;
 }
 .section-3 img {
-    margin-left: 80px;
-    height: 180px;
+    margin-left: 50px;
+    height: 210px;
 }
 .form-zayavka {
     background-color: #f7f7f7;
-    width: 1000px;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 30px 0;
 }
-.form-zayavka h2 {
+.form-zayavka div {
+    width: 400px;
+    margin: auto;
+}
+.form-zayavka div h2 {
     text-align: center;
 }
 fieldset {
-    width: 400px;
-    margin: auto;
     margin-top: 20px;
     border: 2px solid #00ab83;
     padding: 20px;
     padding-top: 10px;
 }
-.form-zayavka > input {
-    margin-left: 280px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.form-zayavka > div > input {
     border-radius: 8px;
     border-color: #00d9a6;
     background-color: transparent;
@@ -165,37 +162,33 @@ fieldset {
     font-weight: bold;
     border-style: solid;
     font-size: 16px;
-}
-.field-contacts {
-    margin-top: 15px;
-
+    margin-top: 30px;
 }
 select {
-    width: 120px;
-    margin-right: 60px;
+    width: 170px;
     border-radius: 8px;
     border-color: LightGray;
     background-color: white;
     padding: 5px;
+    margin-top: 15px;
+
 }
 fieldset input {
     width: 170px;
-    float: right;
     border-radius: 8px;
     border-color: LightGray;
     border-width: 1px;
     border-style: solid;
-    height: 20px;
-
+    margin-top: 15px;
+    height: 22px;
 }
 .field {
-    clear: both;
     text-align: right;
-    margin-top: 15px;
-    line-height: 23px;
 }
+
 label {
     float: left;
+    margin-top: 20px;
 }
 legend, label, option, fieldset > div {
     font-family: sans-serif;
@@ -204,6 +197,9 @@ legend, label, option, fieldset > div {
 legend {
     color: #00d9a6;
 }
+.field-contacts {
+    text-align: right;
+}
 h3 {
     font-size: 18px;
 }
@@ -211,10 +207,14 @@ footer {
     background-color: #303846;
     color: white;
     font-family: sans-serif;
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 50px;
+    padding: 50px 0;
     line-height: 25px;
+}
+footer > div {
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
 }
 .project-doc, .o-zastr {
     font-weight: bold;

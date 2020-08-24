@@ -32,7 +32,7 @@
             </div>
             <div>
                 <form action="#form">
-                    <input  class="form-button" type="submit" value="Забронировать">
+                    <input class="form-button cursor-pointer" type="submit" value="Забронировать">
                 </form>
             </div>
         </div>
@@ -52,11 +52,13 @@
         </div>
         <section class="section-2" id="o-zhk">
             <div>
-                <h2>О ЖК «Лунное море»</h2>
-                <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
-                <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
+                <div>
+                    <h2>О ЖК «Лунное море»</h2>
+                    <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
+                    <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
+                </div>
+                <img src="images/moon-1.jpg" alt="moon1">
             </div>
-            <img src="images/moon-1.jpg" alt="moon1">
         </section>
         <section class="section-3" id="mesta-dlya-otdyha">
             <img src="images/moon-2.jpg" alt="moon2">
@@ -67,56 +69,68 @@
             </div>
         </section>
         <form id="form" class="form-zayavka">
-            <h2>Оставьте заявку сегодня!</h2>
-            <fieldset>
-                <legend>Параметры квартиры</legend>
-                <div class="field">
-                    <label>Количество комнат:</label>
-                    <select>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
-                <div class="field">
-                    <label>Отделка:</label>
-                    <select>
-                        <option>Вариант 1</option>
-                        <option>Вариант 2</option>
-                        <option>Вариант 3</option>
-                    </select>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Контактная информация</legend>
-                <div class="field-contacts">Имя:<input type="text"></div>
-                <div class="field-contacts">Телефон:<input type="text"></div>
-                <div class="field-contacts">E-mail:<input type="text"></div> 
-            </fieldset>
-
-            <input type="submit" value="Отправить">
+            <div>
+                <h2>Оставьте заявку сегодня!</h2>
+                <fieldset>
+                    <legend>Параметры квартиры</legend>
+                    <div class="field">
+                        <label>Количество комнат:</label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Отделка:</label>
+                        <select>
+                            <option>Вариант 1</option>
+                            <option>Вариант 2</option>
+                            <option>Вариант 3</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Контактная информация</legend>
+                    <div class="field-contacts">
+                        <label>Имя:</label>
+                        <input type="text">
+                    </div>
+                    <div class="field-contacts">
+                        <label>Телефон:</label>
+                        <input type="text">
+                    </div>
+                    <div class="field-contacts">
+                        <label>E-mail:</label>
+                        <input type="text">
+                    </div> 
+                </fieldset>
+                <input class="cursor-pointer" type="submit" value="Отправить">
+            </div>
         </form>
     </main>
     <footer>
-        <div class="logo-footer">
-            <ul>
-                <li><img src="images/logo.svg" alt="logo"><span>Лунное море</span></li>
-                <li>&copy; 2032 год</li>
-            </ul>
-        </div>
-        <div class="project-doc">
-            <h3>Проектная документация</h3>
-            <ul>
-                <li><a href="#">Скачать</a></li>
-                <li><a href="#">Посмотреть на сайте</a></li>
-            </ul>
-        </div>
-        <div class="o-zastr">
-            <h3>О застройщике</h3>
-            <ul>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Сайт компании</a></li>
-            </ul>
+        <div>
+            <div class="logo-footer">
+                <ul>
+                    <li><img src="images/logo.svg" alt="logo"><span>Лунное море</span></li>
+                    <li>&copy; 2032 год</li>
+                </ul>
+            </div>
+            <div class="project-doc">
+                <h3>Проектная документация</h3>
+                <ul>
+                    <li><a href="#">Скачать</a></li>
+                    <li><a href="#">Посмотреть на сайте</a></li>
+                </ul>
+            </div>
+            <div class="o-zastr">
+                <h3>О застройщике</h3>
+                <ul>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Сайт компании</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
