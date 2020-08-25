@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="logo">
             <img src="images/logo.svg" alt="logo">
             <span class="site-name">Лунное море</span>
@@ -16,41 +16,41 @@
         <nav>
             <ul class="nav-horizontal">
                 <li><a href="#preimushchestva" class="mr-2 bold">Преимущества</a></li>
-                <li><a href="#o-zhk" class="mr-2 bold">О ЖК</a></li>
+                <li><a href="#o-zhk" class="mr-2 bold">О ЖК «Лунное море»</a></li>
                 <li><a href="#mesta-dlya-otdyha" class="mr-2 bold">Места для отдыха</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="banner">
+        <div class="block-head">
             <div>
-                <img src="images/logo.svg" alt="logo">
-            </div>
-            <div class="banner-text">
-                <p class="banner-text-1">ЖК «Лунное море»</p>
-                <p class="banner-text-2">Место, откуда не хочется улетать</p>
-            </div>
-            <div>
-                <form action="#form">
-                    <input class="form-button cursor-pointer" type="submit" value="Забронировать">
-                </form>
+                <div>
+                    <img src="images/logo.svg" alt="logo">
+                </div>
+                <div>
+                    <p class="block-head-text-1">ЖК «Лунное море»</p>
+                    <p class="block-head-text-2">Место, откуда не хочется улетать</p>
+                </div>
+                <div class="block-head-button">
+                    <a href="#form">Забронировать</a>
+                </div>
             </div>
         </div>
-        <div class="section-1" id="preimushchestva"> <!-- Здесь использован тег div. Если использовать тег section вместо div, то проект не проходит валидацию, т.к. в теге section должен быть заголовок, который отсутствует по макету -->
-            <article>
+        <div class="section-advantages" id="preimushchestva"> <!-- Здесь использован тег div. Если использовать тег section вместо div, то проект не проходит валидацию, т.к. в теге section должен быть заголовок, который отсутствует по макету -->
+            <div>
                 <h2>Уникальный вид</h2>
                 <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
-            </article>
-            <article>
+            </div>
+            <div>
                 <h2>Инфраструктура</h2>
                 <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
-            </article>
-            <article>
+            </div>
+            <div>
                 <h2>Близость к Москве</h2>
                 <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
-            </article>
+            </div>
         </div>
-        <section class="section-2" id="o-zhk">
+        <section class="section-about" id="o-zhk">
             <div>
                 <div>
                     <h2>О ЖК «Лунное море»</h2>
@@ -60,7 +60,7 @@
                 <img src="images/moon-1.jpg" alt="moon1">
             </div>
         </section>
-        <section class="section-3" id="mesta-dlya-otdyha">
+        <section class="section-places-for-rest" id="mesta-dlya-otdyha">
             <img src="images/moon-2.jpg" alt="moon2">
             <div>
                 <h2>Места для отдыха</h2>
@@ -70,42 +70,44 @@
         </section>
         <form id="form" class="form-zayavka">
             <div>
-                <h2>Оставьте заявку сегодня!</h2>
-                <fieldset>
-                    <legend>Параметры квартиры</legend>
-                    <div class="field">
-                        <label>Количество комнат:</label>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <label>Отделка:</label>
-                        <select>
-                            <option>Вариант 1</option>
-                            <option>Вариант 2</option>
-                            <option>Вариант 3</option>
-                        </select>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Контактная информация</legend>
-                    <div class="field-contacts">
-                        <label>Имя:</label>
-                        <input type="text">
-                    </div>
-                    <div class="field-contacts">
-                        <label>Телефон:</label>
-                        <input type="text">
-                    </div>
-                    <div class="field-contacts">
-                        <label>E-mail:</label>
-                        <input type="text">
-                    </div> 
-                </fieldset>
-                <input class="cursor-pointer" type="submit" value="Отправить">
+                <div>               
+                    <h2>Оставьте заявку сегодня!</h2>
+                    <fieldset>
+                        <legend>Параметры квартиры</legend>
+                        <div class="field">
+                            <label>Количество комнат:</label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label>Отделка:</label>
+                            <select>
+                                <option>Вариант 1</option>
+                                <option>Вариант 2</option>
+                                <option>Вариант 3</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Контактная информация</legend>
+                        <div class="field-contacts">
+                            <label>Имя:</label>
+                            <input type="text">
+                        </div>
+                        <div class="field-contacts">
+                            <label>Телефон:</label>
+                            <input type="text">
+                        </div>
+                        <div class="field-contacts">
+                            <label>E-mail:</label>
+                            <input type="text">
+                        </div> 
+                    </fieldset>
+                    <input class="button" type="submit" value="Отправить">
+                </div>
             </div>
         </form>
     </main>
@@ -114,7 +116,7 @@
             <div class="logo-footer">
                 <ul>
                     <li><img src="images/logo.svg" alt="logo"><span>Лунное море</span></li>
-                    <li>&copy; 2032 год</li>
+                    <li><small>&copy; 2032 год</small></li>
                 </ul>
             </div>
             <div class="project-doc">
