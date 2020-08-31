@@ -15,29 +15,23 @@
         </div>
         <nav>
             <ul class="l-style-none flex">
-                <li><a href="#preimushchestva" class="mr2 bold black text-dec-none">Преимущества</a></li>
-                <li><a href="#o-zhk" class="mr2 bold black text-dec-none">О ЖК «Лунное море»</a></li>
-                <li><a href="#mesta-dlya-otdyha" class="mr2 bold black text-dec-none">Места для отдыха</a></li>
+                <li><a href="#preimushchestva" class="ml2 bold black text-dec-none">Преимущества</a></li>
+                <li><a href="#o-zhk" class="ml2 bold black text-dec-none">О ЖК «Лунное море»</a></li>
+                <li><a href="#mesta-dlya-otdyha" class="ml2 bold black text-dec-none">Места для отдыха</a></li>
             </ul>
         </nav>
     </header>
     <main class="mt60">
-        <div class="background-image pt-pb-60">
-            <div class="w-1000 column">
-                <div>
-                    <img src="images/logo.svg" alt="logo" class="h140">
-                </div>
-                <div>
-                    <p class="mt10 f-size-3 white bold">ЖК «Лунное море»</p>
-                    <p class="mt-40 mb30 white bold">Место, откуда не хочется улетать</p>
-                </div>
-                <div>
-                    <a href="#form" class="button border-white bold white text-dec-none">Забронировать</a>
-                </div>
+        <div class="bg-space pt-pb-60">
+            <div class="w1000-flex-marginauto column">
+                <img src="images/logo.svg" alt="logo" class="h140">
+                <h1 class="mt10 f-size-3 white bold">ЖК «Лунное море»</h1>
+                <p class="mt-15 mb30 white bold">Место, откуда не хочется улетать</p>
+                <a href="#form" class="btn border-white text-dec-none m-auto">Забронировать</a>
             </div>
         </div>
         <section class="pt-pb-60" id="preimushchestva">
-            <div class="w-1000">
+            <div class="w1000-flex-marginauto">
                 <div class="w-30per">
                     <h2>Уникальный вид</h2>
                     <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
@@ -52,8 +46,8 @@
                 </div>
             </div>
         </section>
-        <section class="pt-pb-60 background-gray97" id="o-zhk">
-            <div class="w-1000">
+        <section class="pt-pb-60 background-gray" id="o-zhk">
+            <div class="w1000-flex-marginauto">
                 <div class="w-45per">
                     <h2>О ЖК «Лунное море»</h2>
                     <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
@@ -63,7 +57,7 @@
             </div>
         </section>
         <section class="pt-pb-60" id="mesta-dlya-otdyha">
-            <div class="w-1000">
+            <div class="w1000-flex-marginauto">
                 <img src="images/moon-2.jpg" alt="moon2" class="w-30per">
                 <div class="w-45per">
                     <h2>Места для отдыха</h2>
@@ -72,51 +66,51 @@
                 </div>
             </div>
         </section>
-        <form id="form" class="pt-pb-60 background-gray97">
-            <div class="w-1000">
-                <div class="w-50per">               
-                    <h2 class="text-center">Оставьте заявку сегодня!</h2>
-                    <fieldset class="mt20">
-                        <legend>Параметры квартиры</legend>
+        <div id="form" class="pt-pb-60 background-gray">
+            <div class="w1000 m-auto">
+                <h2 class="text-center">Оставьте заявку сегодня!</h2>
+                <form class="w-50per m-auto">               
+                    <fieldset class="fieldset">
+                        <legend class="color09d3ac bold">Параметры квартиры</legend>
                         <div class="text-right bold">
-                            <label>Количество комнат:</label>
-                            <select class="fieldset">
+                            <label class="floatleft-mt15">Количество комнат:</label>
+                            <select class="select">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                             </select>
                         </div>
                         <div class="text-right bold">
-                            <label>Отделка:</label>
-                            <select class="fieldset">
+                            <label class="floatleft-mt15">Отделка:</label>
+                            <select class="select">
                                 <option>Вариант 1</option>
                                 <option>Вариант 2</option>
                                 <option>Вариант 3</option>
                             </select>
                         </div>
                     </fieldset>
-                    <fieldset class="mt20">
-                        <legend>Контактная информация</legend>
+                    <fieldset class="mb30 fieldset">
+                        <legend class="color09d3ac bold">Контактная информация</legend>
                         <div class="text-right bold">
-                            <label>Имя:</label>
-                            <input type="text" class="fieldset border-green h22">
+                            <label class="floatleft-mt15">Имя:</label>
+                            <input type="text" class="input-contact border-green h22">
                         </div>
                         <div class="text-right bold">
-                            <label>Телефон:</label>
-                            <input type="text" class="fieldset border-green h22">
+                            <label class="floatleft-mt15">Телефон:</label>
+                            <input type="text" class="input-contact border-green h22">
                         </div>
                         <div class="text-right bold">
-                            <label>E-mail:</label>
-                            <input type="text" class="fieldset border-green h22">
+                            <label class="floatleft-mt15">E-mail:</label>
+                            <input type="text" class="input-contact border-green h22">
                         </div> 
                     </fieldset>
-                    <input class="pointer button bold color09d3ac mt40 border-green" type="submit" value="Отправить">
-                </div>
+                    <input class="btn pointer color09d3ac border-green" type="submit" value="Отправить">
+                </form>
             </div>
-        </form>
+        </div>
     </main>
     <footer class="footer pt-pb-60 white">
-        <div class="w-1000">
+        <div class="w1000-flex-marginauto">
             <div class="logo-footer">
                 <ul>
                     <li class="flex"><img src="images/logo.svg" alt="logo" class="w30"><span class="pl20 bold">Лунное море</span></li>

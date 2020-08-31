@@ -5,8 +5,6 @@ p {
 }
 h1 {
     font-size: 3em;
-    margin-top: 0;
-    margin-bottom: 0;  
 }
 h2 {
     font-size: 1.8em;
@@ -20,6 +18,9 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
+.m-auto {
+    margin: auto;
+}
 .mt10 {
     margin-top: 10px;
 }
@@ -32,11 +33,11 @@ body {
 .mt60 {
     margin-top: 60px;
 }
-.mt-40 {
-    margin-top: -40px;
+.mt-15 {
+    margin-top: -15px;
 }
-.mr2 {
-    margin-right: 2em;
+.ml2 {
+    margin-left: 2em;
 }
 .mb30 {
     margin-bottom: 30px;
@@ -69,6 +70,9 @@ body {
 .w30 {
     width: 30px;
 }
+.w1000 {
+    width: 1000px;
+}
 .text-center {
     text-align: center;
 }
@@ -84,7 +88,7 @@ body {
 .black {
     color: black;
 }
-.background-gray97 {
+.background-gray {
     background-color: #f7f7f7;
 }
 .color09d3ac {
@@ -124,57 +128,58 @@ body {
     list-style: none;
 }
 .logo {
-    margin-left: 20px;
     align-items: center;
 }
-.background-image {
+.bg-space {
     background-image: url(../images/banner.png);
     background-position: center;
     background-size: cover;
     text-align: center;
 }
-.button {
+.btn {
     border-radius: 10px;
     padding: 10px 10px;
     font-size: 1em;
     background-color: transparent;
+    font-weight: bold;
+    width: 140px;
 }
 .border-white {
     border: 1px solid #ffffff;
+    color: white;
 }
 .border-green {
     border: 1px solid #09d3ac;
 }
-.w-1000 {
+.w1000-flex-marginauto {
     width: 1000px;
     display: flex;
     margin: auto;
     justify-content: space-around;
 }
-fieldset {
+.fieldset {
+    border-color: LightGray;
+    margin-top: 15px;
     border: 2px solid #09d3ac;
     padding: 20px;
-    padding-top: 10px;
 }
-select {
+.select {
     background-color: white;
     padding: 5px;
-}
-.fieldset {
     width: 170px;
     border-radius: 8px;
     border-color: LightGray;
     margin-top: 15px;
 }
-label {
+.input-contact {
+    width: 170px;
+    border-radius: 8px;
+    border-color: LightGray;
+    margin-top: 15px;
+}
+.floatleft-mt15 {
     float: left;
-    margin-top: 20px;
-}
-legend, label, option {
-    font-weight: bold;
-}
-legend {
-    color: #09d3ac;
+    margin-top: 15px;
 }
 .footer {
     background-color: #303846;
