@@ -1,28 +1,32 @@
 p {
     font-size: 16px;
-    color: #303846;
+    color: #303846; /* Сделал переменные только по тем цветам, которые использованы более одного раза в файле. Для одиночных цветов переменные не делал. Верно? */
     line-height: 1.5em;
 }
 h1 {
     font-size: 3em;
+    margin-top: 10px;
+    font-size: 3em;
+    color: var(--white);
+    font-weight: bold
 }
 h2 {
     font-size: 1.8em;
     margin-top: 0;
     margin-bottom: 0.5em;
 }
-h3 {
-    font-size: 1em;
+.fs1 {
+    font-size: 1.2em;
 }
 body {
     margin: 0;
     font-family: sans-serif;
 }
+.mt0 {
+    margin-top: 0;
+}
 .m-auto {
     margin: auto;
-}
-.mt10 {
-    margin-top: 10px;
 }
 .mt20 {
     margin-top: 20px;
@@ -30,20 +34,17 @@ body {
 .mt40 {
     margin-top: 40px;
 }
-.mt60 {
-    margin-top: 60px;
-}
 .mt-15 {
     margin-top: -15px;
+}
+.ml1 {
+    margin-left: 1em;
 }
 .ml2 {
     margin-left: 2em;
 }
 .mb30 {
     margin-bottom: 30px;
-}
-.pl20 {
-    padding-left: 20px;
 }
 .pt-pb-60 {
     padding-top: 60px;
@@ -57,6 +58,9 @@ body {
 }
 .h140 {
     height: 140px;
+}
+.w-25per {
+    width: 25%;
 }
 .w-30per {
     width: 30%;
@@ -76,14 +80,14 @@ body {
 .text-center {
     text-align: center;
 }
-.f-size-3 {
-    font-size: 3em;
-}
 .bold {
     font-weight: bold;
 }
+:root {
+    --white: white;
+}
 .white {
-    color: white;
+    color: var(--white);
 }
 .black {
     color: black;
@@ -91,8 +95,11 @@ body {
 .background-gray {
     background-color: #f7f7f7;
 }
+:root {
+    --green: #09d3ac;
+}
 .color09d3ac {
-    color: #09d3ac;
+    color: var(--green);
 }
 .text-dec-none {
     text-decoration: none;
@@ -115,19 +122,27 @@ body {
 .space-between {
     justify-content: space-between;
 }
+:root {
+    --height-header: 60px;
+}
 .header {
-    position: fixed;
-    box-sizing: border-box;
-    top: 0;
-    height: 60px;
     width: 100%;
-    background: #ffffff;
+    background: var(--white);
     padding: 5px 20px;
+    box-sizing: border-box;
+    height: var(--height-header);
+}
+.mt-header {
+    margin-top: var(--height-header);
+}
+.header-fixed {
+    position: fixed;
+    top: 0;
 }
 .l-style-none {
     list-style: none;
 }
-.logo {
+.align-center {
     align-items: center;
 }
 .bg-space {
@@ -145,36 +160,39 @@ body {
     width: 140px;
 }
 .border-white {
-    border: 1px solid #ffffff;
-    color: white;
+    border: 1px solid var(--white);
+    color: var(--white);
 }
 .border-green {
-    border: 1px solid #09d3ac;
+    border: 1px solid var(--green);
 }
-.w1000-flex-marginauto {
+.container {
     width: 1000px;
     display: flex;
     margin: auto;
     justify-content: space-around;
 }
+:root {
+    --lightgray: LightGray;
+}
 .fieldset {
-    border-color: LightGray;
+    border-color: var(--lightgray);
     margin-top: 15px;
-    border: 2px solid #09d3ac;
+    border: 2px solid var(--green);
     padding: 20px;
 }
 .select {
-    background-color: white;
+    background-color: var(--white);
     padding: 5px;
     width: 170px;
     border-radius: 8px;
-    border-color: LightGray;
+    border-color: var(--lightgray);
     margin-top: 15px;
 }
 .input-contact {
     width: 170px;
     border-radius: 8px;
-    border-color: LightGray;
+    border-color: var(--lightgray);
     margin-top: 15px;
 }
 .floatleft-mt15 {

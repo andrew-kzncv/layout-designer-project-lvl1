@@ -8,30 +8,30 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header flex space-between">
-        <div class="logo flex bold">
+    <header class="header header-fixed flex space-between">
+        <div class="align-center flex bold">
             <img src="images/logo.svg" alt="logo" class="h30">
-            <span class="site-name pl20">Лунное море</span>
+            <span class="site-name ml2">Лунное море</span>
         </div>
         <nav>
             <ul class="l-style-none flex">
-                <li><a href="#preimushchestva" class="ml2 bold black text-dec-none">Преимущества</a></li>
+                <li><a href="#preimushchestva" class="bold black text-dec-none">Преимущества</a></li>
                 <li><a href="#o-zhk" class="ml2 bold black text-dec-none">О ЖК «Лунное море»</a></li>
                 <li><a href="#mesta-dlya-otdyha" class="ml2 bold black text-dec-none">Места для отдыха</a></li>
             </ul>
         </nav>
     </header>
-    <main class="mt60">
+    <main class="mt-header">
         <div class="bg-space pt-pb-60">
-            <div class="w1000-flex-marginauto column">
+            <div class="container column">
                 <img src="images/logo.svg" alt="logo" class="h140">
-                <h1 class="mt10 f-size-3 white bold">ЖК «Лунное море»</h1>
+                <h1>ЖК «Лунное море»</h1>
                 <p class="mt-15 mb30 white bold">Место, откуда не хочется улетать</p>
                 <a href="#form" class="btn border-white text-dec-none m-auto">Забронировать</a>
             </div>
         </div>
         <section class="pt-pb-60" id="preimushchestva">
-            <div class="w1000-flex-marginauto">
+            <div class="container">
                 <div class="w-30per">
                     <h2>Уникальный вид</h2>
                     <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
@@ -47,7 +47,7 @@
             </div>
         </section>
         <section class="pt-pb-60 background-gray" id="o-zhk">
-            <div class="w1000-flex-marginauto">
+            <div class="container">
                 <div class="w-45per">
                     <h2>О ЖК «Лунное море»</h2>
                     <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
@@ -57,7 +57,7 @@
             </div>
         </section>
         <section class="pt-pb-60" id="mesta-dlya-otdyha">
-            <div class="w1000-flex-marginauto">
+            <div class="container">
                 <img src="images/moon-2.jpg" alt="moon2" class="w-30per">
                 <div class="w-45per">
                     <h2>Места для отдыха</h2>
@@ -110,25 +110,23 @@
         </div>
     </main>
     <footer class="footer pt-pb-60 white">
-        <div class="w1000-flex-marginauto">
-            <div class="logo-footer">
+        <div class="space-between w1000 m-auto flex">
+            <div class="w-25per logo-footer">
+                <p class="white mt0 flex"><img src="images/logo.svg" alt="logo" class="w30"><span class="ml1 bold fs1">Лунное море</span></p>
+                <p class="white"><small class="mt20">&copy; 2032 год</small></p>
+            </div>
+            <div class="w-25per bold">
+                <h2 class="fs1">Проектная документация</h2>
                 <ul>
-                    <li class="flex"><img src="images/logo.svg" alt="logo" class="w30"><span class="pl20 bold">Лунное море</span></li>
-                    <li class="flex"><small class="mt20">&copy; 2032 год</small></li>
+                    <li><a href="#" class="white text-dec-none list-item">Скачать</a></li>
+                    <li><a href="#" class="white text-dec-none list-item">Посмотреть на сайте</a></li>
                 </ul>
             </div>
-            <div class="bold">
-                <h3>Проектная документация</h3>
+            <div class="w-25per bold">
+                <h2 class="fs1">О застройщике</h2>
                 <ul>
-                    <li class="flex"><a href="#" class="white text-dec-none list-item">Скачать</a></li>
-                    <li class="flex"><a href="#" class="white text-dec-none list-item">Посмотреть на сайте</a></li>
-                </ul>
-            </div>
-            <div class="bold">
-                <h3>О застройщике</h3>
-                <ul>
-                    <li class="flex"><a href="#" class="white text-dec-none list-item">Отзывы</a></li>
-                    <li class="flex"><a href="#" class="white text-dec-none list-item">Сайт компании</a></li>
+                    <li><a href="#" class="white text-dec-none list-item">Отзывы</a></li>
+                    <li><a href="#" class="white text-dec-none list-item">Сайт компании</a></li>
                 </ul>
             </div>
         </div>
