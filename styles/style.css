@@ -1,3 +1,9 @@
+:root {
+    --height-section: 60px;
+    --white: white;
+    --green: #09d3ac;
+    --lightgray: LightGray;
+}
 p {
     font-size: 16px;
     color: #303846; /* Сделал переменные только по тем цветам, которые использованы более одного раза в файле. Для одиночных цветов переменные не делал. Верно? */
@@ -15,6 +21,9 @@ h2 {
     margin-top: 0;
     margin-bottom: 0.5em;
 }
+li {
+    font-weight: bold;
+}
 .fs1 {
     font-size: 1.2em;
 }
@@ -31,9 +40,6 @@ body {
 .mt20 {
     margin-top: 20px;
 }
-.mt40 {
-    margin-top: 40px;
-}
 .mt-15 {
     margin-top: -15px;
 }
@@ -47,8 +53,8 @@ body {
     margin-bottom: 30px;
 }
 .pt-pb-60 {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: var(--height-section);
+    padding-bottom: var(--height-section);
 }
 .h22 {
     height: 22px;
@@ -74,17 +80,11 @@ body {
 .w30 {
     width: 30px;
 }
-.w1000 {
-    width: 1000px;
-}
 .text-center {
     text-align: center;
 }
 .bold {
     font-weight: bold;
-}
-:root {
-    --white: white;
 }
 .white {
     color: var(--white);
@@ -94,9 +94,6 @@ body {
 }
 .background-gray {
     background-color: #f7f7f7;
-}
-:root {
-    --green: #09d3ac;
 }
 .color09d3ac {
     color: var(--green);
@@ -110,9 +107,6 @@ body {
 .text-right {
     text-align: right;
 }
-.list-item {
-    display: list-item;
-}
 .flex {
     display: flex;
 }
@@ -122,18 +116,16 @@ body {
 .space-between {
     justify-content: space-between;
 }
-:root {
-    --height-header: 60px;
-}
+
 .header {
     width: 100%;
     background: var(--white);
     padding: 5px 20px;
     box-sizing: border-box;
-    height: var(--height-header);
+    height: var(--height-section);
 }
 .mt-header {
-    margin-top: var(--height-header);
+    margin-top: var(--height-section);
 }
 .header-fixed {
     position: fixed;
@@ -171,9 +163,6 @@ body {
     display: flex;
     margin: auto;
     justify-content: space-around;
-}
-:root {
-    --lightgray: LightGray;
 }
 .fieldset {
     border-color: var(--lightgray);
