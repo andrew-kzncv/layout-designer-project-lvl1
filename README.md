@@ -1,5 +1,7 @@
 URL: <a href="http://hideous-seashore.surge.sh/">hideous-seashore.surge.sh</a>
 
+Описание: тренировочный проект от платформы Хекслет
+
 Стэк:
 HTML, CSS
 
