@@ -1,4 +1,4 @@
-<a href="http://hideous-seashore.surge.sh/">hideous-seashore.surge.sh</a>
+URL: <a href="http://hideous-seashore.surge.sh/">hideous-seashore.surge.sh</a>
 
 Стэк:
 HTML, CSS
